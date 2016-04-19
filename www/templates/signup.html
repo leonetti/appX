@@ -1,0 +1,38 @@
+<ion-view view-title="Signup" id="signup__wrapper">
+  <ion-content>
+    <form class="first__element form__90">
+      <div class="list">
+        <label class="item item-input">
+          <input ng-model="user.teleNum" type="tel" placeholder="mobile number">
+        </label>
+        <label class="item item-input">
+          <input ng-model="user.firstName" type="text" placeholder="first name">
+        </label>
+        <label class="item item-input">
+          <input ng-model="user.lastName" type="text" placeholder="last name">
+        </label>
+        <label class="item item-input">
+          <input ng-model="user.age" type="tel" placeholder="age">
+        </label>
+        <ion-list>
+          <ion-radio ng-model="user.gender" ng-value="'Male'" class="signup-radio">Male</ion-radio>
+          <ion-radio ng-model="user.gender" ng-value="'Female'" class="signup-radio">Female</ion-radio>
+        </ion-list>
+        <label class="item item-input">
+          <input ng-model="user.email" type="email" placeholder="email">
+        </label>
+        <label class="item item-input">
+          <input ng-model="user.password" type="password" placeholder="password">
+        </label>
+        <label class="item item-input">
+          <input ng-model="user.passwordConfirm" type="password" placeholder="confirm password">
+        </label>
+        <p class="form__comment--right">Already have an account?</p>
+        <div class="button-bar form__buttons">
+          <a class="button button-positive" ng-click="signup()">Create Account</a>
+          <a class="button button-royal" ui-sref="login">Login</a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
