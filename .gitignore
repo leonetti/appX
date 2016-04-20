@@ -7,3 +7,5 @@ plugins/
 www/lib/
 www/.DS_Store
 .DS_Store
+www/bower_components
+.io-config.json
